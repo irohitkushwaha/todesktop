@@ -5,8 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Desktop Clone</title>
     <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <p class="text-9xl bg-green-600 text-white mt-10">hello</p>
+    <header>
+      <!-- navbar -->
+      <nav
+        class="flex items-center justify-between shadow shadow-gray-800/50 px-4 bg-gray-50/50 py-3"
+      >
+
+
+        <div class="flex flex-1 justify-start items-center gap-[2px]">
+          <img src="./todekstopimg.avif" alt="" />
+          <h3 class="font-inter font-bold text-[18px]">ToDesktop</h3>
+        </div>
+        <div
+          class="hidden lg:flex gap-12 text-[17px] font-semibold font-inter text-gray-900/85 items-center"
+        >
+          <a class="hover:text-blue-500" href="#">Pricing</a>
+          <a class="hover:text-blue-500" href="#">Docs</a>
+          <a class="hover:text-blue-500" href="#">Changelog</a>
+
+          <a class="hover:text-blue-500" href="#">Blog</a>
+
+          <a class="hover:text-blue-500" href="#">Login </a>
+        </div>
+        <div class="hidden lg:flex flex-1 justify-end">
+          <button
+            class="flex shadow-[1px_1px_1px_1px_rgba(0,0,0,0.2)] items-center justify-center gap-3 ring ring-gray-400 rounded-lg px-3 py-1"
+          >
+            <img src="./electron-icon.E8mrXtZM.svg" alt="" />
+            <p class="font-semibold font-inter">Electron Developer</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="lg:hidden flex-1 flex justify-end" onclick="HandleMenu()">
+          <i
+            class="fa-solid fa-bars-staggered text-2xl text-[#6d6e73] opacity-80"
+          ></i>
+        </div>
+        <div
+          class=" hidden lg:hidden fixed px-4 py-3 inset-0 w-full h-full z-10 bg-white" onclick="HandleMenu()"
+          id="mobileMenu"
+        >
+          <div class="flex justify-between items-center">
+            <div class="flex flex-1 justify-start items-center gap-[2px]">
+              <img src="./todekstopimg.avif" alt="" />
+              <h3 class="font-inter font-bold text-[18px]">ToDesktop</h3>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-xmark text-3xl text-[#6d6e73] opacity-80"
+              ></i>
+            </div>
+          </div>
+          <div>
+            <ul
+              class="flex flex-col gap-1 font-inter text-[18px] text-gray-800 font-semibold px-1 pt-8"
+            >
+              <li class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50">
+                <a href="#">Pricing</a>
+              </li>
+              <li class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50"><a href="#">Docs</a></li>
+              <li class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50"><a href="#">ChangeLog</a></li>
+              <li class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50"><a href="#">Blog</a></li>
+              <li class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50"><a href="#">Login</a></li>
+            </ul>
+          </div>
+          <div class="w-full h-[1px] bg-gray-200 px-4 mt-14"></div>
+          <div class="flex p-4 gap-3 mt-7">
+            <img src="./electron-icon.E8mrXtZM.svg" alt="" />
+            <p class="font-semibold font-inter text-md">Electron Developer</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+            <!-- heroSection -->
+
+            <div>
+              
+            </div>
+
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
