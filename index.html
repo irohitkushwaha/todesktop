@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,14 +15,12 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <header>
       <!-- navbar -->
       <nav
         class="flex items-center justify-between shadow shadow-gray-800/50 px-4 bg-gray-50/50 py-3"
       >
-
-
         <div class="flex flex-1 justify-start items-center gap-[2px]">
           <img src="./todekstopimg.avif" alt="" />
           <h3 class="font-inter font-bold text-[18px]">ToDesktop</h3>
@@ -49,11 +47,12 @@
         </div>
         <div class="lg:hidden flex-1 flex justify-end" onclick="HandleMenu()">
           <i
-            class="fa-solid fa-bars-staggered text-2xl text-[#6d6e73] opacity-80"
+            class="fa-solid cursor-pointer fa-bars-staggered text-2xl text-[#6d6e73] opacity-80"
           ></i>
         </div>
         <div
-          class=" hidden lg:hidden fixed px-4 py-3 inset-0 w-full h-full z-10 bg-white" onclick="HandleMenu()"
+          class="hidden lg:hidden fixed px-4 py-3 inset-0 w-full h-full z-10 bg-white"
+          onclick="HandleMenu()"
           id="mobileMenu"
         >
           <div class="flex justify-between items-center">
@@ -63,7 +62,7 @@
             </div>
             <div>
               <i
-                class="fa-solid fa-xmark text-3xl text-[#6d6e73] opacity-80"
+                class="fa-solid fa-xmark cursor-pointer text-3xl text-[#6d6e73] opacity-80"
               ></i>
             </div>
           </div>
@@ -71,13 +70,31 @@
             <ul
               class="flex flex-col gap-1 font-inter text-[18px] text-gray-800 font-semibold px-1 pt-8"
             >
-              <li class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50">
+              <li
+                class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50"
+              >
                 <a href="#">Pricing</a>
               </li>
-              <li class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50"><a href="#">Docs</a></li>
-              <li class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50"><a href="#">ChangeLog</a></li>
-              <li class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50"><a href="#">Blog</a></li>
-              <li class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50"><a href="#">Login</a></li>
+              <li
+                class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50"
+              >
+                <a href="#">Docs</a>
+              </li>
+              <li
+                class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50"
+              >
+                <a href="#">ChangeLog</a>
+              </li>
+              <li
+                class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50"
+              >
+                <a href="#">Blog</a>
+              </li>
+              <li
+                class="cursor-pointer rounded-lg w-full py-3 px-3 hover:bg-gray-50"
+              >
+                <a href="#">Login</a>
+              </li>
             </ul>
           </div>
           <div class="w-full h-[1px] bg-gray-200 px-4 mt-14"></div>
@@ -89,12 +106,606 @@
       </nav>
     </header>
     <main>
-            <!-- heroSection -->
+      <!-- heroSection -->
 
-            <div>
-              
+      <div
+        class="w-full min-h-screen bg-gradient-to-br from-purple-100 via-yellow-50/70 to-transparent flex flex-col gap-20 pb-[1000px]"
+      >
+        <div
+          id="upperhero"
+          class="flex md:items-center md:justify-center gap-10 px-6 pt-14 flex-col max-w-4xl mx-auto"
+        >
+          <button
+            class="flex hover:-translate-y-[3px] hover:shadow-lg group justify-center items-center gap-3 px-3 py-1 bg-yellow-100/80 rounded-lg border border-amber-500/30 shadow transition-transform ease-linear duration-150 w-fit"
+          >
+            <i
+              class="fa-solid fa-circle text-yellow-300 border border-amber-500 text-[8px] rounded-full"
+            ></i>
+            <p class="text-amber-900 font-semibold text-[16px] font-inter">
+              v0.26.0
+            </p>
+            <i
+              class="fa-solid fa-arrow-right text-yellow-700 text-[18px] group-hover:translate-x-[4px] transition-transform ease-linear"
+            ></i>
+          </button>
+
+          <div class="hidden md:flex justify-center gap-6">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-file-code text-gray-700"></i>
+              <p class="font-inter text-[17px] text-gray-600 font-[500]">
+                Code Optional
+              </p>
             </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-hand-pointer text-gray-700"></i>
+              <p class="font-inter text-[17px] text-gray-600 font-[500]">
+                Drag & Drop Builder
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-regular fa-window-restore text-gray-700"></i>
+              <p class="font-inter text-[17px] text-gray-600 font-[500]">
+                Windows, Mac, Linux
+              </p>
+            </div>
+          </div>
+          <h1
+            class="text-[50px] lg:text-7xl pt-6 leading-tight font-bold font-inter text-center"
+          >
+            Web app to desktop app in minutes
+          </h1>
+          <p
+            class="text-[20px] text-gray-700 font-inter text-center md:text-2xl"
+          >
+            Take your web app codebase and transform it into a cross platform
+            desktop app with native functionality.
+          </p>
+          <div class="flex flex-col md:flex-row gap-6">
+            <button
+              class="bg-blue-600 py-2 hover:opacity-90 text-gray-100 text-center w-full rounded-lg text-[18px] font-semibold font-inter hover:cursor-pointer px-7 whitespace-nowrap"
+            >
+              Download now
+            </button>
+            <button
+              class="bg-white py-2 px-7 not-visited:not-target:whitespace-nowrap text-gray-700 text-center w-full rounded-lg text-[18px] font-semibold font-inter border border-gray-400/60 hover:border-gray-400/90 transition-transform ease-linear cursor-pointer duration-1000"
+            >
+              Read docs
+            </button>
+          </div>
+        </div>
+        <!-- company log -->
+        <div class="flex flex-col gap-16">
+          <div class="flex justify-center gap-4">
+            <img
+              class="translate-y-3"
+              src="./pointing-arrow.hZqSxAwL.svg"
+              alt=""
+            />
+            <p class="uppercase font-inter font-semibold text-gray-800">
+              Apps powered by ToDesktop
+            </p>
+            <img
+              class="transform translate-y-3 scale-x-[-1]"
+              src="./pointing-arrow.hZqSxAwL.svg"
+              alt=""
+            />
+          </div>
 
+          <!-- animation -->
+          <div class="px-4 flex-col flex gap-4">
+            <div
+              id="line-1"
+              class="flex gap-4 -translate-x-[400px] transition-transform ease-linear duration-500"
+            >
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="customer-logo-ReadyRunner.E1mlS2ng.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  ReadyRunner
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="customer-logo-LifeAt.-Gg__Z7j.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  LifeAt
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="customer-logo-Convy.-nvozOOU.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Convy
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="customer-logo-Morgen.T902B6yE.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                Morgen                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="customer-logo-Campsite.zLN9hc3H.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                Campsite                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="customer-logo-Voiceflow.VziEVPjD.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                Voiceflow                </p>
+              </div>
+              <div
+                class="min-w-[70px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="object-cover"
+                  src="customer-logo-Slite.CUJ2gxTv (1).avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                Slite                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="customer-logo-Cursor.BL-Q9qKK.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                Cursor                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="customer-logo-Sunsama.sysR-7s-.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                Sunsama                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="customer-logo-Beeper.vXFMsQ7M.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                Beeper                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="customer-logo-Cal.tNj98lGU.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                Cal                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="customer-logo-Webstudio.zTfi1fj8.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                Webstudio                </p>
+              </div>
+            </div>
+            <div
+              id="line-2"
+              class="flex gap-4 -translate-x-[100px] transition-transform ease-linear duration-500"
+            >
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+            </div>
+            <div
+              id="line-3"
+              class="flex gap-4 -translate-x-[400px] transition-transform ease-linear duration-500"
+            >
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <img
+                  class="w-[50px] h-fit"
+                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
+                  alt=""
+                />
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>
