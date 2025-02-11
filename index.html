@@ -38,7 +38,7 @@
         </div>
         <div class="hidden lg:flex flex-1 justify-end">
           <button
-            class="flex shadow-[1px_1px_1px_1px_rgba(0,0,0,0.2)] items-center justify-center gap-3 ring ring-gray-400 rounded-lg px-3 py-1"
+            class="flex items-center justify-center gap-3 ring-1 ring-gray-400 hover:ring-gray-500 transition-transform ease-linear duration-300 rounded-lg px-3 py-2"
           >
             <img src="./electron-icon.E8mrXtZM.svg" alt="" />
             <p class="font-semibold font-inter">Electron Developer</p>
@@ -97,7 +97,6 @@
               </li>
             </ul>
           </div>
-          <div class="w-full h-[1px] bg-gray-200 px-4 mt-14"></div>
           <div class="flex p-4 gap-3 mt-7">
             <img src="./electron-icon.E8mrXtZM.svg" alt="" />
             <p class="font-semibold font-inter text-md">Electron Developer</p>
@@ -105,11 +104,12 @@
         </div>
       </nav>
     </header>
+
     <main>
       <!-- heroSection -->
 
       <div
-        class="w-full min-h-screen bg-gradient-to-br from-purple-100 via-yellow-50/70 to-transparent flex flex-col gap-20 pb-[1000px]"
+        class="w-full min-h-screen bg-gradient-to-br from-purple-100 from-0% via-yellow-50/50 via-30% to-transparent to-80% flex flex-col gap-20 pb-[70px]"
       >
         <div
           id="upperhero"
@@ -174,6 +174,7 @@
           </div>
         </div>
         <!-- company log -->
+
         <div class="flex flex-col gap-16">
           <div class="flex justify-center gap-4">
             <img
@@ -195,30 +196,19 @@
           <div class="px-4 flex-col flex gap-4">
             <div
               id="line-1"
-              class="flex gap-4 -translate-x-[400px] transition-transform ease-linear duration-500"
+              class="flex gap-4 -translate-x-[200px] transition-all ease-out duration-500"
             >
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="customer-logo-ReadyRunner.E1mlS2ng.avif"
-                  alt=""
-                />
-                <p
-                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
-                >
-                  ReadyRunner
-                </p>
-              </div>
-              <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
-              >
-                <img
-                  class="w-[50px] h-fit"
-                  src="customer-logo-LifeAt.-Gg__Z7j.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-LifeAt.-Gg__Z7j.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
@@ -226,13 +216,33 @@
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="customer-logo-Convy.-nvozOOU.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-ReadyRunner.E1mlS2ng.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  ReadyRunner
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Convy.-nvozOOU.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
@@ -240,13 +250,16 @@
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="customer-logo-Morgen.T902B6yE.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Morgen.T902B6yE.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
@@ -254,13 +267,16 @@
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="customer-logo-Campsite.zLN9hc3H.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Campsite.zLN9hc3H.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
@@ -268,13 +284,16 @@
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="customer-logo-Voiceflow.VziEVPjD.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Voiceflow.VziEVPjD.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
@@ -282,13 +301,16 @@
                 </p>
               </div>
               <div
-                class="min-w-[70px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="object-cover"
-                  src="customer-logo-Slite.CUJ2gxTv (1).avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Slite.CUJ2gxTv (1).avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
@@ -296,13 +318,16 @@
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="customer-logo-Cursor.BL-Q9qKK.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Cursor.BL-Q9qKK.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
@@ -310,13 +335,16 @@
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="customer-logo-Sunsama.sysR-7s-.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Sunsama.sysR-7s-.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
@@ -324,13 +352,16 @@
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="customer-logo-Beeper.vXFMsQ7M.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Beeper.vXFMsQ7M.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
@@ -338,13 +369,16 @@
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="customer-logo-Cal.tNj98lGU.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Cal.tNj98lGU.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
@@ -352,32 +386,395 @@
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="customer-logo-Webstudio.zTfi1fj8.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Webstudio.zTfi1fj8.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
                   Webstudio
                 </p>
               </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Moises.AiW9adgp.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Moises
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Superpowered.tHC_RfpU.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Superpowered
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Slite.CUJ2gxTv (1).avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Slite
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Typefully.4TRxK4Xu (1).avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Typefully
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Unbounce.P8n0k4Cq.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Unbounce
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Basedash.3zVpqFz2.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Basedash
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Rise._nYytet0.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Rise
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Linear.BJ6nQ1Yg.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Linear
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Kosy.tn19yWNP.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kosy
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Kitemaker.T5qcAjAr (1).avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kitemaker
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Superpowered.tHC_RfpU.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Superpowered
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Bento.sWc6My29.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Bento
+                </p>
+              </div>
             </div>
             <div
               id="line-2"
-              class="flex gap-4 -translate-x-[100px] transition-transform ease-linear duration-500"
+              class="flex gap-4 -translate-x-[250px] transition-all ease-out duration-500"
             >
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Moises.AiW9adgp.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Moises
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Superpowered.tHC_RfpU.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Superpowered
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Slite.CUJ2gxTv (1).avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Slite
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Typefully.4TRxK4Xu (1).avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Typefully
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Unbounce.P8n0k4Cq.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Unbounce
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Basedash.3zVpqFz2.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Basedash
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Rise._nYytet0.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Rise
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Linear.BJ6nQ1Yg.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Linear
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Kosy.tn19yWNP.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kosy
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Kitemaker.T5qcAjAr (1).avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
@@ -385,172 +782,531 @@
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Superpowered.tHC_RfpU.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
-                  Kitemaker
+                  Superpowered
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Bento.sWc6My29.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
-                  Kitemaker
+                  Bento
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-LifeAt.-Gg__Z7j.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
-                  Kitemaker
+                  LifeAt
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-ReadyRunner.E1mlS2ng.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
-                  Kitemaker
+                  ReadyRunner
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Convy.-nvozOOU.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
-                  Kitemaker
+                  Convy
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Morgen.T902B6yE.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
-                  Kitemaker
+                  Morgen
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Campsite.zLN9hc3H.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
-                  Kitemaker
+                  Campsite
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Voiceflow.VziEVPjD.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
-                  Kitemaker
+                  Voiceflow
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Slite.CUJ2gxTv (1).avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
-                  Kitemaker
-                </p>
-              </div>
-              <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
-              >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
-                <p
-                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
-                >
-                  Kitemaker
-                </p>
-              </div>
-              <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
-              >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
-                <p
-                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
-                >
-                  Kitemaker
+                  Slite
                 </p>
               </div>
             </div>
             <div
               id="line-3"
-              class="flex gap-4 -translate-x-[400px] transition-transform ease-linear duration-500"
+              class="flex gap-4 -translate-x-[100px] transition-all ease-out duration-500"
             >
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-LifeAt.-Gg__Z7j.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  LifeAt
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-ReadyRunner.E1mlS2ng.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  ReadyRunner
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Convy.-nvozOOU.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Convy
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Morgen.T902B6yE.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Morgen
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Campsite.zLN9hc3H.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Campsite
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Voiceflow.VziEVPjD.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Voiceflow
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Slite.CUJ2gxTv (1).avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Slite
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Cursor.BL-Q9qKK.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Cursor
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Sunsama.sysR-7s-.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Sunsama
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Beeper.vXFMsQ7M.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Beeper
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Cal.tNj98lGU.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Cal
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Webstudio.zTfi1fj8.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Webstudio
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Moises.AiW9adgp.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Moises
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Superpowered.tHC_RfpU.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Superpowered
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Slite.CUJ2gxTv (1).avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Slite
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Typefully.4TRxK4Xu (1).avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Typefully
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Unbounce.P8n0k4Cq.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Unbounce
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Basedash.3zVpqFz2.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Basedash
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Rise._nYytet0.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Rise
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Linear.BJ6nQ1Yg.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Linear
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Kosy.tn19yWNP.avif"
+                    alt=""
+                  />
+                </div>
+
+                <p
+                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
+                >
+                  Kosy
+                </p>
+              </div>
+              <div
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+              >
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Kitemaker.T5qcAjAr (1).avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
@@ -558,164 +1314,758 @@
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Superpowered.tHC_RfpU.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
-                  Kitemaker
+                  Superpowered
                 </p>
               </div>
               <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
+                class="w-[100px] h-[100px] justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-lg shadow-gray-950 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
               >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
+                <div class="w-[50px] h-[50px]">
+                  <img
+                    class="w-[50px] h-[50px] object-contain"
+                    src="customer-logo-Bento.sWc6My29.avif"
+                    alt=""
+                  />
+                </div>
+
                 <p
                   class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
                 >
-                  Kitemaker
-                </p>
-              </div>
-              <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
-              >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
-                <p
-                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
-                >
-                  Kitemaker
-                </p>
-              </div>
-              <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
-              >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
-                <p
-                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
-                >
-                  Kitemaker
-                </p>
-              </div>
-              <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
-              >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
-                <p
-                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
-                >
-                  Kitemaker
-                </p>
-              </div>
-              <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
-              >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
-                <p
-                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
-                >
-                  Kitemaker
-                </p>
-              </div>
-              <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
-              >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
-                <p
-                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
-                >
-                  Kitemaker
-                </p>
-              </div>
-              <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
-              >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
-                <p
-                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
-                >
-                  Kitemaker
-                </p>
-              </div>
-              <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
-              >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
-                <p
-                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
-                >
-                  Kitemaker
-                </p>
-              </div>
-              <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
-              >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
-                <p
-                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
-                >
-                  Kitemaker
-                </p>
-              </div>
-              <div
-                class="w-fit justify-center items-center rounded-lg border hover:-translate-y-2 transition-transform ease-linear duration-300 hover:shadow-sm shadow-gray-500 border-gray-400/55 bg-white flex flex-col gap-2 px-4 py-2"
-              >
-                <img
-                  class="w-[50px] h-fit"
-                  src="./customer-logo-Kitemaker.T5qcAjAr.avif"
-                  alt=""
-                />
-                <p
-                  class="font-inter text-center whitespace-nowrap font-medium text-[12px]"
-                >
-                  Kitemaker
+                  Bento
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- main content body -->
+      <!-- this was how it works -->
+      <div class="flex flex-col gap-12 px-6 max-w-7xl mx-auto">
+        <div class="font-inter font-bold text-[35px] md:text-[45px]">
+          How it works
+        </div>
+        <div
+          class="bg-gray-100 rounded-lg w-full px-8 py-8 flex flex-col items-start gap-8 lg:flex-row"
+        >
+          <div class="w-full flex flex-col items-start gap-8">
+            <button
+              class="bg-yellow-200/50 text-amber-900 border border-yellow-600/50 px-3 py-1 font-semibold font-inter rounded-lg"
+            >
+              Step 1
+            </button>
+            <h2 class="font-inter text-[35px] md:text-[37px] font-bold">
+              Bootstrap straight from your web app
+            </h2>
+            <p class="text-gray-800 font-inter text-[19px] font-sem md:text-xl">
+              Copy and paste your web app url into ToDesktop. Customise your app
+              design, app icon and window frame UI with no code.
+            </p>
+
+            <div class="w-full">
+              <ul
+                class="grid grid-cols-2 md:text-[19px] text-[18px] font-inter gap-y-3 text-gray-700"
+              >
+                <li>
+                  <i class="fa-solid fa-check pr-[6px] text-gray-600"></i>
+                  <a
+                    class="border-b border-gray-400 hover:border-gray-700"
+                    href="#"
+                    >windows</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >Customisable</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b itr border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >Menubar</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b itr border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >startup</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b itr border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >Support</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b itr border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >Tabs</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-10 mb-8 w-full flex items-center justify-center">
+            <img src="graphic.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="bg-gray-100 rounded-lg w-full px-8 py-8 flex flex-col items-start gap-8 lg:flex-row"
+        >
+          <div class="w-full flex flex-col items-start gap-8">
+            <button
+              class="bg-yellow-200/50 text-amber-900 border border-yellow-600/50 px-3 py-1 font-semibold font-inter rounded-lg"
+            >
+              Step 2
+            </button>
+            <h2 class="font-inter text-[35px] md:text-[37px] font-bold">
+              Add desktop code to customise your web app
+            </h2>
+            <p class="text-gray-800 font-inter text-[19px] font-sem md:text-xl">
+              No need to create a new repository, just add code from our desktop
+              APIs to your codebase and get access to system level
+              functionality.
+            </p>
+
+            <div class="w-full">
+              <ul
+                class="grid grid-cols-2 md:text-[19px] text-[18px] font-inter gap-y-3 text-gray-700"
+              >
+                <li>
+                  <i class="fa-solid fa-check pr-[6px] text-gray-600"></i>
+                  <a
+                    class="border-b border-gray-400 hover:border-gray-700"
+                    href="#"
+                    >windows</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >Customisable</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b itr border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >Menubar</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b itr border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >startup</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b itr border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >Support</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b itr border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >Tabs</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-10 mb-8 w-full flex items-center justify-center">
+            <img
+              src="Screenshot_2025-02-11_115521-removebg-preview.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="bg-gray-100 rounded-lg w-full px-8 py-8 flex flex-col items-start gap-8 lg:flex-row"
+        >
+          <div class="w-full flex flex-col items-start gap-8">
+            <button
+              class="bg-yellow-200/50 text-amber-900 border border-yellow-600/50 px-3 py-1 font-semibold font-inter rounded-lg"
+            >
+              Step 3
+            </button>
+            <h2 class="font-inter text-[35px] md:text-[37px] font-bold">
+              Publish 🚀
+            </h2>
+            <p class="text-gray-800 font-inter text-[19px] font-sem md:text-xl">
+              One-click will publish your desktop app to your customers and give
+              you a download link to put on your website.
+            </p>
+
+            <div class="w-full">
+              <ul
+                class="grid grid-cols-2 md:text-[19px] text-[18px] font-inter gap-y-3 text-gray-700"
+              >
+                <li>
+                  <i class="fa-solid fa-check pr-[6px] text-gray-600"></i>
+                  <a
+                    class="border-b border-gray-400 hover:border-gray-700"
+                    href="#"
+                    >windows</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >Customisable</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b itr border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >Menubar</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b itr border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >startup</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b itr border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >Support</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="fa-solid pr-[6px] fa-check text-gray-600 text-center"
+                  ></i>
+                  <a
+                    class="border-b itr border-gray-400 hover:border-gray-700 text-center"
+                    href="#"
+                    >Tabs</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-10 mb-8 w-full flex items-center justify-center">
+            <img src="loading.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- this was - to desktop handles the details -->
+
+      <div class="flex flex-col gap-12 px-6 max-w-7xl mx-auto mt-14">
+        <h2 class="font-inter font-bold text-[35px] md:text-[45px]">
+          ToDesktop handles the details
+        </h2>
+        <div
+          class="flex flex-col gap-6 lg:grid lg:grid-cols-3"
+          style="grid-auto-rows: 96px"
+        >
+          <div
+            id="1"
+            class="row-span-2 hover:shadow-md hover:bg-gradient-to-br from-red-200 via-purple-200 to-yellow-200 w-full p-[1px] transition-all ease-linear duration-300 group bg-gray-100 border hover:border-none rounded-lg"
+          >
+            <div
+              class="group-hover:bg-gradient-to-br from-red-50 via-purple-50 to-yellow-50 w-full transition-all ease-linear duration-300 rounded-lg flex flex-col items-center justify-center gap-5 py-8 h-full"
+            >
+              <h3 class="font-inter font-semibold text-[25px]">
+                Native Notifications
+              </h3>
+
+              <img src="notifications-cachebust@3x.avif" alt="" />
+            </div>
+          </div>
+          <div
+            id="2"
+            class="row-span-3 hover:shadow-md border hover:border-none hover:bg-gradient-to-br from-red-200 via-purple-200 to-yellow-200 w-full p-[1px] transition-all ease-linear duration-300 group bg-gray-100 rounded-lg"
+          >
+            <div
+              class="group-hover:bg-gradient-to-br from-red-50 via-purple-50 to-yellow-50 w-full transition-all ease-linear h-full duration-300 rounded-lg flex px-6 flex-col items-center justify-center gap-5 py-8"
+            >
+              <h3 class="font-inter font-semibold text-[25px]">Auto Updates</h3>
+              <p
+                class="text-gray-800 text-center font-inter text-[19px] font-sem"
+              >
+                We’ll ensure the underlying browser is up to date and deliver
+                performance improvements, security patches, & additional
+                features.
+              </p>
+              <img src="auto-updates@3x.avif" alt="" />
+            </div>
+          </div>
+          <div
+            id="1"
+            class="row-span-2 hover:shadow-md border hover:border-none hover:bg-gradient-to-br from-red-200 via-purple-200 to-yellow-200 w-full p-[1px] transition-all ease-linear duration-300 group bg-gray-100 rounded-lg"
+          >
+            <div
+              class="group-hover:bg-gradient-to-br from-red-50 via-purple-50 to-yellow-50 w-full transition-all ease-linear duration-300 rounded-lg flex flex-col items-center justify-center gap-5 py-8 h-full"
+            >
+              <h3 class="font-inter font-semibold text-[25px]">Plugins</h3>
+              <img src="plugins@3x.avif" alt="" />
+            </div>
+          </div>
+          <div
+            id="1"
+            class="row-span-3 hover:shadow-md border hover:border-none hover:bg-gradient-to-br from-red-200 via-purple-200 to-yellow-200 w-full p-[1px] transition-all ease-linear duration-300 group bg-gray-100 rounded-lg"
+          >
+            <div
+              class="group-hover:bg-gradient-to-br from-red-50 via-purple-50 to-yellow-50 w-full transition-all ease-linear duration-300 rounded-lg flex flex-col px-6 items-center justify-center gap-5 py-8 h-full"
+            >
+              <h3 class="font-inter font-semibold text-[25px]">
+                Access to Native APIs
+              </h3>
+              <p
+                class="text-gray-800 text-center font-inter text-[19px] font-sem"
+              >
+                ToDesktop ensures the underlying browser, performance
+                improvements, security patches and additional features are
+                always up to date.
+              </p>
+              <img src="apis@3x.avif" alt="" />
+            </div>
+          </div>
+          <div
+            id="1"
+            class="row-span-3 border hover:border-none hover:bg-gradient-to-br from-red-200 via-purple-200 to-yellow-200 w-full p-[1px] transition-all ease-linear duration-300 group bg-gray-100 rounded-lg"
+          >
+            <div
+              class="group-hover:bg-gradient-to-br from-red-50 via-purple-50 to-yellow-50 w-full transition-all ease-linear duration-300 rounded-lg px-6 flex flex-col items-center justify-center gap-5 py-8 hover:shadow-md h-full"
+            >
+              <h3 class="font-inter font-semibold text-[25px]">
+                Native Installers
+              </h3>
+              <p
+                class="text-gray-800 text-center font-inter text-[19px] font-sem"
+              >
+                We’ll ensure the underlying browser is up to date and deliver
+                performance improvements, security patches, & additional
+                features.
+              </p>
+              <img src="installers@3x.avif" alt="" />
+            </div>
+          </div>
+          <div
+            id="1"
+            class="row-span-2 hover:shadow-md border hover:border-none hover:bg-gradient-to-br from-red-200 via-purple-200 to-yellow-200 w-full p-[1px] transition-all ease-linear duration-300 group bg-gray-100 rounded-lg"
+          >
+            <div
+              class="group-hover:bg-gradient-to-br from-red-50 via-purple-50 to-yellow-50 w-full transition-all ease-linear duration-300 rounded-lg flex flex-col items-center justify-center gap-5 py-8 h-full"
+            >
+              <h3 class="font-inter font-semibold text-[25px]">
+                Customizable look and feel
+              </h3>
+              <img src="look-and-feel@3x.avif" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="w-full overflow-hidden border py-5 rounded-lg">
+          <div
+            id="line-4"
+            class="transition-all ease-linear duration-500 -translate-x-4 flex items-center gap-6"
+          >
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+            <i class="fa-solid fa-circle text-gray-300 text-[10px]"></i>
+            <h3 class="whitespace-nowrap font-inter font-semibold text-[25px]">
+              Code Signing
+            </h3>
+          </div>
+        </div>
+      </div>
+      <!-- customer stories -->
+      <div class="flex flex-col gap-12 px-6 max-w-7xl mx-auto mt-14">
+        <h2 class="font-inter font-bold text-[35px] md:text-[45px]">
+          Customer stories
+        </h2>
+        <div class="flex flex-col gap-5 lg:flex-row">
+          <div
+            class="hover:shadow-md hover:bg-gradient-to-br from-red-200 via-purple-200 to-yellow-200 w-full p-[1px] transition-all ease-linear duration-300 group bg-gray-100 border hover:border-none rounded-lg"
+          >
+            <!-- outer box -->
+            <div
+              class="group-hover:bg-gradient-to-br from-red-50 via-purple-50 to-yellow-50 w-full transition-all ease-linear duration-300 rounded-lg flex flex-col gap-5 px-6 py-8"
+            >
+              <!-- inner box -->
+              <div class="flex items-center gap-3">
+                <!-- icon and text in this -->
+                <div
+                  class="bg-indigo-300 border rounded-full py-[5px] px-[7px]"
+                >
+                  <i class="fa-solid fa-code text-gray-800"></i>
+                </div>
+
+                <h2 class="text-[25px] font-semibold font-inter">
+                  Native APIs
+                </h2>
+              </div>
+              <div class="text-gray-800 font-inter text-[19px]">
+                “ What sets ToDesktop apart is its seamless integration with
+                native APIs using our existing web codebase. By tapping into
+                APIs like Tray and Notifications, we've crafted an exceptionally
+                polished desktop user experience. ”
+                <!-- text -->
+              </div>
+              <div class="flex flex-row gap-3">
+                <!-- images and customer -->
+                <div class="flex">
+                  <div
+                    class="-mr-3 rounded-full flex justify-center items-center border w-12 h-12 overflow-hidden"
+                  >
+                    <img
+                      class="min-w-16 min-h-16"
+                      src="customer-logo-Rise._nYytet0 (1).avif"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="rounded-full flex justify-center items-center border w-12 h-12 overflow-hidden"
+                  >
+                    <img
+                      class="min-w-16 min-h-16"
+                      src="Rick.d7xHnafE.avif"
+                      alt=""
+                    />
+                  </div>
+
+                  <!-- images -->
+                </div>
+                <div>
+                  <p class="text-gray-900 font-inter text-[16px] font-semibold">
+                    Rick Pastoor
+                  </p>
+                  <!-- customer -->
+                  <a
+                    class="text-gray-800 hover:border-gray-400 font-inter border-b-2 text-[16px]"
+                    href="#"
+                    >Rise</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hover:shadow-md hover:bg-gradient-to-br from-red-200 via-purple-200 to-yellow-200 w-full p-[1px] transition-all ease-linear duration-300 group bg-gray-100 border hover:border-none rounded-lg"
+          >
+            <!-- outer box -->
+            <div
+              class="group-hover:bg-gradient-to-br from-red-50 via-purple-50 to-yellow-50 w-full transition-all ease-linear duration-300 rounded-lg flex flex-col gap-5 px-6 py-8"
+            >
+              <!-- inner box -->
+              <div class="flex items-center gap-3">
+                <!-- icon and text in this -->
+                <div
+                  class="bg-indigo-300 border rounded-full py-[5px] px-[7px]"
+                >
+                  <i class="fa-solid fa-code text-gray-800"></i>
+                </div>
+
+                <h2 class="text-[25px] font-semibold font-inter">
+                  Cleaner, less cluttered UI
+                </h2>
+              </div>
+              <div class="text-gray-800 font-inter text-[19px]">
+                “Having a desktop app gives us the freedom to design the
+                experience we want, including better keyboard shortcuts and a
+                cleaner UI. It was a no-brainer for us to use ToDesktop. ”
+                <!-- text -->
+              </div>
+              <div class="flex flex-row gap-3">
+                <!-- images and customer -->
+                <div class="flex">
+                  <div
+                    class="-mr-3 rounded-full flex justify-center items-center border w-12 h-12 overflow-hidden"
+                  >
+                    <img
+                      class="min-w-16 min-h-16"
+                      src="customer-logo-Basedash.3zVpqFz2 (1).avif"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="rounded-full flex justify-center items-center border w-12 h-12 overflow-hidden"
+                  >
+                    <img
+                      class="min-w-16 min-h-16"
+                      src="Max.V2rqrzg6.avif"
+                      alt=""
+                    />
+                  </div>
+
+                  <!-- images -->
+                </div>
+                <div>
+                  <p class="text-gray-900 font-inter text-[16px] font-semibold">
+                    Max Musing
+                  </p>
+                  <!-- customer -->
+                  <a
+                    class="text-gray-800 hover:border-gray-400 font-inter border-b-2 text-[16px]"
+                    href="#"
+                    >Basedash</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hover:shadow-md hover:bg-gradient-to-br from-red-200 via-purple-200 to-yellow-200 w-full p-[1px] transition-all ease-linear duration-300 group bg-gray-100 border hover:border-none rounded-lg"
+          >
+            <!-- outer box -->
+            <div
+              class="group-hover:bg-gradient-to-br from-red-50 via-purple-50 to-yellow-50 w-full transition-all ease-linear duration-300 rounded-lg flex flex-col gap-5 px-6 py-8"
+            >
+              <!-- inner box -->
+              <div class="flex items-center gap-3">
+                <!-- icon and text in this -->
+                <div
+                  class="bg-indigo-300 border rounded-full py-[5px] px-[7px]"
+                >
+                  <i class="fa-solid fa-code text-gray-800"></i>
+                </div>
+
+                <h2 class="text-[25px] font-semibold font-inter">
+                  Code optional
+                </h2>
+              </div>
+              <div class="text-gray-800 font-inter text-[19px]">
+                “It was unbelievably simple for us to get a desktop app up and
+                running, and we didn’t have to write a single line of code. Once
+                we had this MVP, we were able to extend the app’s functionality
+                with custom behavior using ToDesktop’s libraries. ”
+                <!-- text -->
+              </div>
+              <div class="flex flex-row gap-3">
+                <!-- images and customer -->
+                <div class="flex">
+                  <div
+                    class="-mr-3 rounded-full flex justify-center items-center border w-12 h-12 overflow-hidden"
+                  >
+                    <img
+                      class="min-w-16 min-h-16"
+                      src="customer-logo-LifeAt.-Gg__Z7j (1).avif"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="rounded-full flex justify-center items-center border w-12 h-12 overflow-hidden"
+                  >
+                    <img
+                      class="min-w-16 min-h-16"
+                      src="Pouya.Q0zAbZRS.avif"
+                      alt=""
+                    />
+                  </div>
+
+                  <!-- images -->
+                </div>
+                <div>
+                  <p class="text-gray-900 font-inter text-[16px] font-semibold">
+                    Pouya Rad
+                  </p>
+                  <!-- customer -->
+                  <a
+                    class="text-gray-800 hover:border-gray-400 font-inter border-b-2 text-[16px]"
+                    href="#"
+                    >LifeAt</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- pricing model -->
+      <div class="mb-[800px] flex flex-col gap-12 px-6 max-w-7xl mx-auto mt-14">
+        <div class="flex flex-col gap-4 lg:flex-row lg:justify-between">
+          <h2 class="font-inter font-bold text-[35px] md:text-[45px]">
+            Choose a plan that fits your needs
+          </h2>
+          <div></div>
+        </div>
+      </div>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>
