@@ -4,6 +4,18 @@ function HandleMenu() {
   console.log("toogled");
 }
 
+const pricing = document.getElementById("pricing");
+const essential = document.getElementById("essential");
+const professional = document.getElementById("professional");
+
+function HandlePrice() {
+  pricing.classList.toggle("translate-x-full");
+  essential.innerText = essential.innerText.trim() === "$125" ? "$100" : "$125";
+  professional.innerText = professional.innerText.trim() === "$240" ? "$300" : "$240";
+
+  console.log("price model changed");
+}
+
 // // //Algorithm for animation in company logo
 // // //1. observer if element is inside the viewport
 // // //2. if inside then use scroll event listen to listen
@@ -13,7 +25,7 @@ function HandleMenu() {
 // //     entries.forEach((entry) => {
 // //       if (entry.isIntersecting) {
 // //          window.addEventListener("scroll", () => {
-// //           if(LTR){  
+// //           if(LTR){
 // //             element.classList.add("translate-x-[5px]")
 // //           }
 // //         });
@@ -27,7 +39,6 @@ function HandleMenu() {
 // // const Line1 = document.querySelector("#line-1");
 
 // // IntersectionObserveElement(Line1, true);
-
 
 // // Example function to toggle a menu icon (unrelated to the scroll animation)
 // const MenuIcon = document.getElementById("mobileMenu");
@@ -104,13 +115,11 @@ function HandleMenu() {
 // const Line2 = document.querySelector("#line-2");
 // const Line3 = document.querySelector("#line-3");
 
-
 // // Start the intersection observation and scroll-based translation.
 // // Here, LTR is true and speed is 1 (you can adjust these values as needed).
 // IntersectionObserveElement(Line1, true, 0.3);
 // IntersectionObserveElement(Line2, false, 0.3);
 // IntersectionObserveElement(Line3, true, 0.3);
-
 
 /**
  * This function coordinates CSS and JavaScript-based translations for smooth scroll animations.
@@ -125,19 +134,19 @@ function IntersectionObserveElement(element, LTR, speed) {
   let offsetX = 0;
   let scrollListenerAdded = false;
   let animationInitialized = false;
-  
+
   // Get initial CSS transform value
   const initialTransform = -200; // matching the Tailwind -translate-x-[200px]
-  
+
   function initializeAnimation() {
     if (!animationInitialized) {
       // Remove the Tailwind class that causes initial translation
-      element.classList.remove('-translate-x-[200px]');
-      
+      element.classList.remove("-translate-x-[200px]");
+
       // Set initial position programmatically
       offsetX = initialTransform;
       element.style.transform = `translateX(${offsetX}px)`;
-      
+
       animationInitialized = true;
     }
   }
@@ -163,13 +172,13 @@ function IntersectionObserveElement(element, LTR, speed) {
 
   function throttle(func, limit) {
     let inThrottle;
-    return function(...args) {
+    return function (...args) {
       if (!inThrottle) {
         func.apply(this, args);
         inThrottle = true;
-        setTimeout(() => inThrottle = false, limit);
+        setTimeout(() => (inThrottle = false), limit);
       }
-    }
+    };
   }
 
   const observer = new IntersectionObserver((entries) => {
@@ -178,7 +187,9 @@ function IntersectionObserveElement(element, LTR, speed) {
         if (!scrollListenerAdded) {
           // Initialize animation when element comes into view
           initializeAnimation();
-          window.addEventListener("scroll", throttledScrollHandler, { passive: true });
+          window.addEventListener("scroll", throttledScrollHandler, {
+            passive: true,
+          });
           scrollListenerAdded = true;
           lastScrollY = window.scrollY;
         }

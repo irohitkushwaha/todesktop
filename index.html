@@ -2056,12 +2056,262 @@
         </div>
       </div>
       <!-- pricing model -->
-      <div class="mb-[800px] flex flex-col gap-12 px-6 max-w-7xl mx-auto mt-14">
-        <div class="flex flex-col gap-4 lg:flex-row lg:justify-between">
-          <h2 class="font-inter font-bold text-[35px] md:text-[45px]">
+      <div class="mb-[50px] flex flex-col gap-12 px-6 max-w-7xl mx-auto mt-14">
+        <div
+          class="flex flex-col gap-10 lg:flex-row lg:justify-between lg:items-center"
+        >
+          <h2 class="font-inter font-bold text-[35px] md:text-[45px] lg:w-1/2">
             Choose a plan that fits your needs
           </h2>
-          <div></div>
+          <div class="flex border w-fit h-fit bg-gray-100 rounded-lg relative">
+            <div
+              id="pricing"
+              class="h-[calc(100%-4px)] w-[calc(50%-2px)] absolute top-[2px] left-[2px] bg-white rounded-lg shadow-md translate-x-full ease-out duration-300 transition-all"
+            ></div>
+            <!-- outer div -->
+            <div
+              class="w-[175px] py-3 px-3 font-inter text-[14px] flex justify-center items-center relative z-10 cursor-pointer"
+              onclick="HandlePrice()"
+            >
+              Monthly
+              <!-- monthly div -->
+            </div>
+            <div
+              class="flex font-inter text-[14px] justify-center items-center px-3 gap-2 py-3 w-[175px] relative z-10 cursor-pointer"
+              onclick="HandlePrice()"
+            >
+              <p>Yearly</p>
+              <p
+                class="bg-[#d5ddff] text-[11px] font-semibold text-[#3238f2] border text-center rounded-[12px] px-2 py-1"
+              >
+                -20%
+              </p>
+              <!-- yearly div & -20%  -->
+            </div>
+          </div>
+        </div>
+        <!-- below subscription plan -->
+        <div class="flex lg:flex-row flex-col gap-6 justify-center">
+          <div
+            class="bg-gray-100 flex-1 border rounded-2xl flex flex-col gap-4 px-6 py-4"
+          >
+            <!-- 1st div - Free -->
+
+            <h2 class="font-inter font-bold text-[28px] lg:text-[33px]">
+              Free
+            </h2>
+            <p class="font-inter text-gray-500 text-[16px] lg:text-[18px]">
+              For personal use or testing your app before deploying to
+              customers.
+            </p>
+            <p
+              class="font-inter text-[16px] lg:text-[17px] mt-4 font-semibold text-gray-500 uppercase"
+            >
+              Key Features
+            </p>
+            <ul class="flex flex-col gap-3 text-[17px] lg:text-[19px]">
+              <li class="flex gap-2 items-center">
+                <i class="fa-solid fa-check text-gray-400"></i>
+                <p class="font-inter text-gray-800">Free for personal use</p>
+              </li>
+              <li class="flex gap-2 items-center">
+                <i class="fa-solid fa-check text-gray-400"></i>
+                <p class="font-inter text-gray-800">Run app locally</p>
+              </li>
+              <li class="flex gap-2 items-center">
+                <i class="fa-solid fa-xmark text-gray-400"></i>
+                <p class="font-inter text-gray-800">No Code Signing</p>
+              </li>
+              <li class="flex gap-2 items-center">
+                <i class="fa-solid fa-xmark text-gray-400"></i>
+                <p class="font-inter text-gray-800">No Native Installers</p>
+              </li>
+            </ul>
+            <div class="pt-[50px] mt-auto">
+              <button
+                class="bg-white font-inter border hover:border-gray-300 rounded-lg py-3 w-full font-semibold text-[18px] text-[#3238f2]"
+              >
+                <a href="#">Get Started</a>
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-gray-100 flex-1 border rounded-lg flex flex-col gap-4 px-6 py-4"
+          >
+            <!-- 2nd div - Free -->
+
+            <h2 class="font-inter font-bold text-[28px] lg:text-[33px]">
+              Essential
+            </h2>
+            <p class="font-inter text-gray-500 text-[16px] lg:text-[18px]">
+              For simple desktop apps.
+            </p>
+            <p
+              class="font-inter text-gray-500 text-[14px] flex items-center gap-1 lg:text-[16px]"
+            >
+              <span
+                id="essential"
+                class="font-bold text-[18px] lg:text-[20px] text-black"
+                >$100</span
+              >
+              <span>/month</span>
+            </p>
+            <p
+              class="font-inter text-[16px] mt-4 font-semibold text-gray-500 lg:text-[17px] uppercase"
+            >
+              Key Features
+            </p>
+            <ul class="flex flex-col gap-3 text-[17px] lg:text-[19px]">
+              <li class="flex gap-2 items-center">
+                <i class="fa-solid fa-check text-gray-400"></i>
+                <p class="font-inter text-gray-800">Windows, Mac & Linux</p>
+              </li>
+              <li class="flex gap-2 items-center">
+                <i class="fa-solid fa-check text-gray-400"></i>
+                <p class="font-inter text-gray-800">Code Signing</p>
+              </li>
+              <li class="flex gap-2 items-center">
+                <i class="fa-solid fa-xmark text-gray-400"></i>
+                <p class="font-inter text-gray-800">Native Installers</p>
+              </li>
+              <li class="flex gap-2 items-center">
+                <i class="fa-solid fa-xmark text-gray-400"></i>
+                <p class="font-inter text-gray-800">Email/chat support</p>
+              </li>
+            </ul>
+            <div class="pt-[50px] mt-auto">
+              <button
+                class="bg-white font-inter border hover:border-gray-300 rounded-lg py-3 w-full font-semibold text-[18px] text-[#3238f2]"
+              >
+                <a href="#">Get Started</a>
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-gray-100 flex-1 border relative rounded-lg flex flex-col gap-4 px-6 py-4"
+          >
+            <!-- 3rd div - Free -->
+
+            <div
+              class="text-[#3238f2] bg-[#d5ddff] px-3 py-1 rounded-2xl absolute right-3 top-0 border border-gray-200 -translate-y-1/2 font-inter font-semibold text-[12px]"
+            >
+              Most popular
+            </div>
+
+            <h2 class="font-inter font-bold lg:text-[33px] text-[28px]">
+              Professional
+            </h2>
+            <p class="font-inter text-gray-500 text-[16px] lg:text-[18px]">
+              For sophisticated desktop apps.
+            </p>
+            <p
+              class="font-inter text-gray-500 text-[14px] flex items-center lg:text-[16px] gap-1"
+            >
+              <span
+                id="professional"
+                class="font-bold text-[18px] lg:text-[20px] text-black"
+                >$240</span
+              >
+              <span>/month</span>
+            </p>
+            <p
+              class="font-inter text-[16px] lg:text-[17px] mt-4 font-semibold text-gray-500 uppercase"
+            >
+              Everything in Essential Plus
+            </p>
+            <ul class="flex flex-col gap-3 text-[17px] lg:text-[19px]">
+              <li class="flex gap-2 items-center">
+                <i class="fa-solid fa-check text-gray-400"></i>
+                <p class="font-inter text-gray-800">Branded Download links</p>
+              </li>
+              <li class="flex gap-2 items-center">
+                <i class="fa-solid fa-check text-gray-400"></i>
+                <p class="font-inter text-gray-800">Analytics</p>
+              </li>
+              <li class="flex gap-2 items-center">
+                <i class="fa-solid fa-check text-gray-400"></i>
+                <p class="font-inter text-gray-800">Access to Plugins</p>
+              </li>
+              <li class="flex gap-2 items-center">
+                <i class="fa-solid fa-check text-gray-400"></i>
+                <p class="font-inter text-gray-800">Access to restricted API</p>
+              </li>
+            </ul>
+            <div class="pt-[50px] mt-auto">
+              <button
+                class="bg-[#3238f2] font-inter border rounded-lg py-3 w-full font-semibold text-[18px] hover:opacity-95 text-white"
+              >
+                <a href="#">Get Started</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mb-[800px] flex flex-col gap-12 px-6 lg:max-w-7xl md:max-w-2xl mx-auto mt-14"
+      >
+        <div
+          class="flex flex-col lg:flex-row lg:justify-between rounded-2xl px-8 py-9 bg-gray-900 text-white gap-7 lg:gap-16"
+        >
+          <div class="flex flex-col lg:w-1/2  gap-7 ">
+            <p
+              class="font-inter text-gray-200 text-[17px] uppercase font-semibold"
+            >
+              Dedicated support and expert guidance.
+            </p>
+            <h2 class="font-inter text-[40px] font-bold">Enterprise</h2>
+
+            <ul
+              class="flex flex-col gap-4 text-[19px] lg:text-[21px] md:grid-cols-2 md:grid"
+            >
+              <li class="flex gap-4 items-center">
+                <i class="fa-solid fa-check text-white"></i>
+                <p class="font-inter text-white">Free for personal use</p>
+              </li>
+              <li class="flex gap-4 items-center">
+                <i class="fa-solid fa-check text-white"></i>
+                <p class="font-inter text-white">Run app locally</p>
+              </li>
+              <li class="flex gap-4 items-center">
+                <i class="fa-solid fa-check text-white"></i>
+                <p class="font-inter text-white">No Code Signing</p>
+              </li>
+              <li class="flex gap-4 items-center">
+                <i class="fa-solid fa-check text-white"></i>
+                <p class="font-inter text-white">No Native Installers</p>
+              </li>
+              <li class="flex gap-4 items-center">
+                <i class="fa-solid fa-check text-white"></i>
+                <p class="font-inter text-white">No Native Installers</p>
+              </li>
+              <li class="flex gap-4 items-center">
+                <i class="fa-solid fa-check text-white"></i>
+                <p class="font-inter text-white">No Native Installers</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white py-7 rounded-2xl lg:w-[400px] h-fit  ml-auto px-6 lg:px-10">
+            <div class=" flex flex-col gap-6 ">
+              <p
+                class="font-inter text-gray-600 font-semibold text-[16px] text-center"
+              >
+                Secure, reliable cross-platform desktop apps for enterprise
+                teams.
+              </p>
+              <button
+                class="bg-[#3238f2] font-inter border rounded-lg py-3 lg:py-4 w-full font-semibold text-[16px] lg:text-[18px] hover:opacity-95 text-white"
+              >
+                <a href="#">Contact Sales</a>
+              </button>
+              <p class="font-inter text-gray-500 text-[12px]">
+                You may also live chat with us by
+                <span class="underline text-black"
+                  ><a href="#"> clicking here.</a></span
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
