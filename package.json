@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./input.css -o ./output.css --watch"
+    "dev": "tailwindcss -i ./input.css -o ./output.css --watch",
+    "build:css": "tailwindcss -i ./input.css -o ./dist/output.css --minify",
+    "copy": "copyfiles index.html script.js dist",
+    "build": "npm run build:css && npm run copy"
   },
   "author": "",
   "license": "ISC",

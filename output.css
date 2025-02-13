@@ -822,8 +822,8 @@ video {
   margin-bottom: 50px;
 }
 
-.mb-\[800px\]{
-  margin-bottom: 800px;
+.ml-auto{
+  margin-left: auto;
 }
 
 .mt-10{
@@ -848,10 +848,6 @@ video {
 
 .mt-auto{
   margin-top: auto;
-}
-
-.ml-auto{
-  margin-left: auto;
 }
 
 .box-border{
@@ -965,6 +961,14 @@ video {
   height: 3rem;
 }
 
+.h-4{
+  height: 1rem;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
 .h-\[100px\]{
   height: 100px;
 }
@@ -1010,12 +1014,24 @@ video {
   width: 3rem;
 }
 
+.w-3\/4{
+  width: 75%;
+}
+
+.w-4{
+  width: 1rem;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
 .w-\[100px\]{
   width: 100px;
 }
 
-.w-\[175px\]{
-  width: 175px;
+.w-\[140px\]{
+  width: 140px;
 }
 
 .w-\[50px\]{
@@ -1204,6 +1220,11 @@ video {
 
 .translate-y-3{
   --tw-translate-y: 0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-180{
+  --tw-rotate: -180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1567,6 +1588,10 @@ video {
   grid-auto-rows: min-content;
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1817,6 +1842,10 @@ video {
 
 .gap-8{
   gap: 2rem;
+}
+
+.gap-9{
+  gap: 2.25rem;
 }
 
 .gap-\[2px\]{
@@ -2243,6 +2272,10 @@ video {
   border-bottom-width: 2px;
 }
 
+.border-b-\[2px\]{
+  border-bottom-width: 2px;
+}
+
 .border-e{
   border-inline-end-width: 1px;
 }
@@ -2341,6 +2374,10 @@ video {
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-100\/80{
+  background-color: rgb(243 244 246 / 0.8);
 }
 
 .bg-gray-50\/50{
@@ -2729,6 +2766,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .py-7{
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
@@ -2742,6 +2784,11 @@ video {
 .py-9{
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+}
+
+.py-\[22px\]{
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .py-\[5px\]{
@@ -2853,6 +2900,10 @@ video {
 
 .text-\[14px\]{
   font-size: 14px;
+}
+
+.text-\[15px\]{
+  font-size: 15px;
 }
 
 .text-\[16px\]{
@@ -3732,6 +3783,36 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:grid{
+    display: grid;
+  }
+
+  .sm\:h-8{
+    height: 2rem;
+  }
+
+  .sm\:w-8{
+    width: 2rem;
+  }
+
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .sm\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sm\:text-\[18px\]{
+    font-size: 18px;
+  }
+
   .sm\:underline{
     text-decoration-line: underline;
   }
@@ -3742,8 +3823,8 @@ video {
     display: flex;
   }
 
-  .md\:grid{
-    display: grid;
+  .md\:w-\[175px\]{
+    width: 175px;
   }
 
   .md\:max-w-2xl{
@@ -3758,12 +3839,35 @@ video {
     flex-direction: row;
   }
 
+  .md\:flex-row-reverse{
+    flex-direction: row-reverse;
+  }
+
   .md\:items-center{
     align-items: center;
   }
 
   .md\:justify-center{
     justify-content: center;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:py-9{
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
   }
 
   .md\:text-2xl{
@@ -3806,22 +3910,6 @@ video {
     width: 50%;
   }
 
-  .lg\:w-\[300px\]{
-    width: 300px;
-  }
-
-  .lg\:w-\[30px\]{
-    width: 30px;
-  }
-
-  .lg\:w-\[330px\]{
-    width: 330px;
-  }
-
-  .lg\:w-\[350px\]{
-    width: 350px;
-  }
-
   .lg\:w-\[400px\]{
     width: 400px;
   }
@@ -3840,10 +3928,6 @@ video {
 
   .lg\:items-center{
     align-items: center;
-  }
-
-  .lg\:justify-center{
-    justify-content: center;
   }
 
   .lg\:justify-between{
