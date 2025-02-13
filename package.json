@@ -13,5 +13,8 @@
   "dependencies": {
     "tailwindcss": "^3.4.1"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
 }
