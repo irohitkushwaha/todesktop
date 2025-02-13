@@ -250,4 +250,4 @@ const Line4 = document.querySelector("#line-4");
 IntersectionObserveElement(Line1, true, 0.5);
 IntersectionObserveElement(Line2, false, 0.3);
 IntersectionObserveElement(Line3, true, 0.5);
-IntersectionObserveElement(Line4, false, 0.7);
+IntersectionObserveElement(Line4, false, 0.6);
